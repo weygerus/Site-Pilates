@@ -1,19 +1,24 @@
 /* AGENDAR */
 .agendar-area{
-    width: 100%;
     height: 50vh;
     background-color: #ffe5e6;
 }
 h2.agendar{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
     margin-bottom: 50px;
     color: RGB(0, 122, 115);
 }
 span.agendar-fine{
     font-weight: 200;
 }
+.input-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .input-agendar{
+    width: 100%;
     height: 45px;
     border: none;
     margin-bottom: 30px;
@@ -22,16 +27,14 @@ span.agendar-fine{
     outline: none;
 }
 .agendar-button{
-    background-color: RGB(0, 122, 115);
-    color: #fff;
-    border-radius: 22px;
-    margin-top: 20px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-
-    border: none;
     width: 180px;
     height: 45px;
+    margin-top: 20px;
+    
+    color: #fff;
+    background-color: RGB(0, 122, 115);
+    border-radius: 22px;
+    border: none;
 
     font-size: 20px;
     transition: 0.1s ease-in;
@@ -41,6 +44,7 @@ span.agendar-fine{
     color: RGB(0, 122, 115);
     border: 2px solid RGB(0, 122, 115);
 }
+
 
 
 
@@ -59,12 +63,18 @@ span.agendar-fine{
     display: flex;
     justify-content: center;
 }
+.linha1{
+    border-bottom: dotted 2px RGB(0,0,0, 0.3);
+}
+#meio{
+    border-right: dotted 2px RGB(0,0,0, 0.3);
+    border-left: dotted 2px RGB(0,0,0, 0.3);
+}
 .card-box{
     width: 33%;
     height: 250px;
-    border: 1px solid red;
 }
-@media(max-width:770px){
+@media(max-width: 995px){
     .beneficios-area{
         height: 270vh;
     }
@@ -76,9 +86,31 @@ span.agendar-fine{
     .linha1,.linha2{
         flex-direction: column;
         align-items: center;
+        border-bottom: none;
+    }
+    #meio{
+        border-right: none;
+        border-left: none;
     }
     .card-box{
         width: 100%;
         height: 250px;
     }
+}
+
+/* CARDS */
+.circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid RGB(0, 122, 115);
+    margin: 30px auto 20px;
+}
+h3.beneficios-titulo{
+    text-align: center;
+}
+p.beneficios-descricao{
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
 }
