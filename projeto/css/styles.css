@@ -1,0 +1,44 @@
+body{
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #212112;
+      transition: all 200ms linear;
+    }
+
+
+.bg-light {
+    background-color: #fff !important;
+    transition: all 200ms linear;
+}
+.section {
+    position: relative;
+	width: 100%;
+	display: block;
+    background-color: #ffe5e6;
+    overflow-x: hidden;
+}
+.full-height {
+    height: 100vh;
+}
+.over-hide {
+    overflow: hidden;
+}
+.absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+    margin-top: 40px;
+	transform: translateY(-50%);
+    z-index: 20;
+}
+::selection {
+    color: #fff;
+    background-color: #8167a9;
+}
+::-moz-selection {
+    color: #fff;
+    background-color: #8167a9;
+}

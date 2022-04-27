@@ -1,0 +1,85 @@
+.agendar-area{
+    width: 100%;
+    height: 50vh;
+    background-color: #ffe5e6;
+}
+h2.agendar{
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    color: RGB(0, 122, 115);
+}
+span.agendar-fine{
+    font-weight: 200;
+}
+.input-agendar{
+    height: 45px;
+    border: none;
+    margin-bottom: 30px;
+}
+.input-agendar:focus{
+    outline: none;
+}
+.agendar-button{
+    background-color: RGB(0, 122, 115);
+    color: #fff;
+    border-radius: 22px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    border: none;
+    width: 180px;
+    height: 45px;
+
+    font-size: 20px;
+    transition: 0.1s ease-in;
+}
+.agendar-button:hover{
+    background-color: #f6f6f6;
+    color: RGB(0, 122, 115);
+    border: 2px solid RGB(0, 122, 115);
+}
+
+
+
+
+/* BENEFICIOS */
+.beneficios{
+    height: 100vh;
+    background-color: #f6f6f6;
+    overflow-x: hidden;
+}
+.cards-area{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.linha1,.linha2{
+    display: flex;
+    justify-content: center;
+}
+.card-box{
+    width: 33%;
+    height: 250px;
+    border: 1px solid red;
+}
+@media(max-width:770px){
+    .beneficios{
+        height: 270vh;
+    }
+    .cards-area{
+        height: 250vh;
+        padding-top: 100px;
+        justify-content: flex-start;
+    }
+    .linha1,.linha2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-box{
+        width: 100%;
+        height: 250px;
+    }
+}
