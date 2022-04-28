@@ -74,9 +74,34 @@
 
 
     <!-- NAVBAR MOBILE -->
+    <header class="header mobile-start-style">
+        <nav class="mobile-nav">
+            <a href="#inicio"><img class="mobile-brand" src="assets/pilates-sem-fundo.png" alt="brand"></a>
+
+            <button class="mobile-nav-button" onclick="menuClick()">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+            </button>
+        </nav>
+        <ul class="mobile-nav-list" id="mobile-menu">
+            <li class="mobile-nav-link"><a onclick="menuClick()" href="#inicio">inicio</a></li>
+            <li class="mobile-nav-link"><a onclick="menuClick()" href="#sobre">sobre</a></li>
+            <li class="mobile-nav-link"><a onclick="menuClick()" href="#beneficios">beneficios</a></li>
+            <li class="mobile-nav-link"><a onclick="menuClick()" href="#galeria">galeria</a></li>
+            <li class="mobile-nav-link"><a onclick="menuClick()" href="#contato">contato</a></li>
+        </ul>
+    </header>
+
+
+
+
+
+
+
     
     <!-- HOME -->
-	<div class="section full-height">
+	<div class="section full-height" id="inicio">
         <div class="absolute-center">
             <div class="section">
                 
@@ -94,19 +119,6 @@
                         </div>		
                     </div>		
                 </div>
-                <!-- 
-                <div class="section mt-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div id="switch">
-                                    <div id="circle"></div>
-                                </div>
-                            </div>	
-                        </div>		
-                    </div>
-                </div> 
-                -->
             </div>
         </div>
     </div>
@@ -194,14 +206,14 @@
   
 
     <section class="galeria-area">
-        <div class="owl-carousel owl-theme">
+        <!-- <div class="owl-carousel owl-theme">
             <img class="teste-img" src="assets/1.webp" alt="">
             <img src="assets/2.jpg" alt="">
             <img src="assets/3.jpg" alt="">
             <img src="assets/4.webp" alt="">
             <img src="assets/5.jpg" alt="">
             <img src="assets/6.jpg" alt="">
-        </div>
+        </div> -->
     </section>
 
 

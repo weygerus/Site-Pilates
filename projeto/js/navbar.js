@@ -40,4 +40,45 @@
 		}
 	});  
 	
-  })(jQuery); 
+  })(jQuery);
+  
+  
+// MOBILE NAVBAR
+
+var show = true;
+
+function menuClick(){
+	console.log('menu aberto');
+
+	// MENU ICON
+	const line1 = document.getElementById('line1');
+	const line2 = document.getElementById('line2');
+	const line3 = document.getElementById('line3');
+	// MENU MOBILE
+	const menu = document.getElementById('mobile-menu');
+	
+	show = !show;
+
+	if(!show){
+		// ICON TRANSFORM
+		line1.style.transform = 'rotate(45deg)';
+		line2.style.transform = 'rotate(-45deg)';
+		line2.style.marginTop = '-10px';
+		line3.style.opacity = '0';
+		
+		// SHOW MENU
+		menu.style.transform = 'translateX(0%)';
+		document.body.style.overflowY = 'hidden'
+	}else{
+		// ICON TRANSFORM
+		line1.style.transform = 'rotate(0deg)';
+		line2.style.transform = 'rotate(0deg)';
+		line2.style.marginTop = '0px';
+		line3.style.opacity = '1';
+
+		// SHOW MENU
+		menu.style.transform = 'translateX(100%)';
+		document.body.style.overflowY = 'scroll'
+	}
+}
+  

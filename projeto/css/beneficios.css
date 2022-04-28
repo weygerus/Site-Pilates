@@ -5,7 +5,7 @@
 }
 h2.agendar{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 45px;
     margin-bottom: 50px;
     color: RGB(0, 122, 115);
 }
@@ -43,6 +43,11 @@ span.agendar-fine{
     background-color: #f6f6f6;
     color: RGB(0, 122, 115);
     border: 2px solid RGB(0, 122, 115);
+}
+@media(max-width:440px){
+    .agendar-area{
+        height: 60vh;
+    }
 }
 
 

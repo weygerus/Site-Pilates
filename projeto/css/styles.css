@@ -35,6 +35,9 @@ body {
 	transform: translateY(-50%);
     z-index: 20;
 }
+
+
+/* SELEÇÃO */
 ::selection {
     color: #fff;
     background-color: #8167a9;
@@ -42,4 +45,14 @@ body {
 ::-moz-selection {
     color: #fff;
     background-color: #8167a9;
+}
+/* AJUSTE DE MIDIA */
+@media(max-width: 220px){
+    section,div,.mobile-nav-button,.mobile-brand{
+        transition: 0.2s ease;
+        opacity: 0;
+    }
+    *{
+        overflow: hidden;
+    }
 }
